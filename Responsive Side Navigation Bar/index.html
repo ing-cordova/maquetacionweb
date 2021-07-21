@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Side Navigation Bar</title>
     <link rel="stylesheet" href="style_main.css">
+    <!-- Boxicon CDN link -->
+    <!-- If you want to change the icons, you should visit the link below -->
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-analyse'></i>
+                <div class="logo_name">thecordova</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <!-- The next list can change if you prefer it, or only change the names and icons -->
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Type here to search">
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-home'></i>
+                    <span class="list_names">Home</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user-pin'></i>
+                    <span class="list_names">Profile</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="list_names">Messages</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart' ></i>
+                    <span class="list_names">Favorites</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="list_names">Settings</span>
+                </a>
+                <!-- <span class="tooltip">Dashboard</span> -->
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <!-- <img src="images/profile_example.jpg" alt="profile_picture"> -->
+                    <div class="name_job">
+                        <div class="name">Andrés Córdova</div>
+                        <div class="job">Sotware Developer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
     <!-- Please don´t remove these tag -->
     <script src="script_main.js"></script>
 </body>
+
 </html>
