@@ -445,4 +445,48 @@ body{
     }
 
     /* About */
+    .presentation__picture{
+        width: 120px;
+        height: 120px;
+    }
+
+    .about{
+        row-gap: 60px;
+    }
+
+    .about.container{
+        padding-top: 10px;
+    }
+
+    /* My Projects */
+    .projects__grid{
+        grid-template-areas: 
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5";
+        height: auto;
+        grid-template-rows: repeat(5, 250px);
+        grid-auto-rows: 250px;
+        gap: 10px;
+    }
+
+    /* Testimony */
+    .testimony__item{
+        padding: 30px 15px;
+    }
+
+    .testimony__person{
+        flex-direction: column;
+    }
+
+    .testimony__texts{
+        text-align: center;
+    }
+
+    .testimony__img{
+        margin: 0;
+        margin-bottom: 20px;
+    }
 }
